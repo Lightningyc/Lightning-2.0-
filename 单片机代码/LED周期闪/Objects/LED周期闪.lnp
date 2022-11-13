@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\LED周期闪.obj" 
+TO ".\Objects\LED周期闪" 
+PRINT(".\Listings\LED周期闪.m51") RAMSIZE(256) 
