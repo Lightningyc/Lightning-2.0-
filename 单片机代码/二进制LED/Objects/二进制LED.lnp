@@ -1,0 +1,3 @@
+".\Objects\二进制LED.obj" 
+TO ".\Objects\二进制LED" 
+PRINT(".\Listings\二进制LED.m51") RAMSIZE(256) 
