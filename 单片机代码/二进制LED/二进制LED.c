@@ -19,12 +19,12 @@ while(xms)
 	 unsigned char LEDNum=0;//定义变量
      while(1)
      {
-      if(P3_1==0)
+      if(P3_1==0)//如果开关处于打开状态（轻触开关）
 	  {
-	    Delay(2000);
+	    Delay(20);//延迟20ms后再亮灯
 	    while(P3_1==0);
-	    Delay(2000);  
-	    LEDNum++;//对变量进行赋值
+	    Delay(20);  
+	    LEDNum++;//对变量迭代（二进制转换）
 		P2=~LEDNum;//再将变量值赋给P2
 	  }
      }

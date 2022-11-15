@@ -1,4 +1,4 @@
-C51 COMPILER V9.54   ______LED                                                             11/14/2022 14:52:10 PAGE 1   
+C51 COMPILER V9.54   ______LED                                                             11/14/2022 19:53:31 PAGE 1   
 
 
 C51 COMPILER V9.54, COMPILATION OF MODULE ______LED
@@ -31,9 +31,9 @@ line level    source
   21   1           {
   22   2            if(P3_1==0)
   23   2                {
-  24   3                  Delay(2000);
+  24   3                  Delay(20);
   25   3                  while(P3_1==0);
-  26   3                  Delay(2000);  
+  26   3                  Delay(20);  
   27   3                  LEDNum++;//对变量进行赋值
   28   3                      P2=~LEDNum;//再将变量值赋给P2
   29   3                }
