@@ -44,8 +44,8 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>动态数码管</OutputName>
+          <OutputDirectory>..\流水灯 PLUS\Objects\</OutputDirectory>
+          <OutputName>模块化编程</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -364,19 +364,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>动态数码管.c</FileName>
+              <FileName>模块化编程.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\动态数码管.c</FilePath>
-            </File>
-            <File>
-              <FileName>Nixie.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Nixie.c</FilePath>
-            </File>
-            <File>
-              <FileName>Nixie.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Nixie.h</FilePath>
+              <FilePath>.\模块化编程.c</FilePath>
             </File>
             <File>
               <FileName>Delay.c</FileName>

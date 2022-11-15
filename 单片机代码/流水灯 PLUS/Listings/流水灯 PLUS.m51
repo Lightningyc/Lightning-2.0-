@@ -1,8 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        11/12/2022  21:46:03  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/16/2022  00:32:14  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\C51\BIN\BL51.EXE .\Objects\流水灯PLUS.obj TO .\Objects\流水灯 PLUS PRINT (.\Listings\流水灯 PLUS.m51) RAMSIZE (256)
+D:\KEIL5\C51\BIN\BL51.EXE .\Objects\流水灯PLUS.obj TO .\Objects\流水灯 PLUS PRINT (.\Listings\流水灯 PLUS.m51) RAMSIZE (
+>> 256)
 
 
 MEMORY MODEL: SMALL
@@ -10,7 +11,7 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   .\Objects\流水灯PLUS.obj (______PLUS)
-  D:\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  .\Objects\流水灯 PLUS (______PLUS)
@@ -25,10 +26,9 @@ LINK MAP OF MODULE:  .\Objects\流水灯 PLUS (______PLUS)
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-                    0003H     07FDH                  *** GAP ***
-            CODE    0800H     003AH     UNIT         ?PR?MAIN?______PLUS
-            CODE    083AH     0018H     UNIT         ?PR?_DELAY1MS?______PLUS
-            CODE    0852H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0003H     0032H     UNIT         ?PR?MAIN?______PLUS
+            CODE    0035H     0018H     UNIT         ?PR?_DELAY1MS?______PLUS
+            CODE    004DH     000CH     UNIT         ?C_C51STARTUP
 
 
 
@@ -54,62 +54,58 @@ SYMBOL TABLE OF MODULE:  .\Objects\流水灯 PLUS (______PLUS)
   -------         MODULE        ______PLUS
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:00A0H         PUBLIC        P2
-  C:083EH         PUBLIC        _Delay1ms
-  C:0800H         PUBLIC        main
-  C:083AH         SYMBOL        L?0014
+  C:0039H         PUBLIC        _Delay1ms
+  C:0003H         PUBLIC        main
+  C:0035H         SYMBOL        L?0014
   -------         PROC          L?0013
   -------         ENDPROC       L?0013
-BL51 BANKED LINKER/LOCATER V6.22                                                      11/12/2022  21:46:03  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/16/2022  00:32:14  PAGE 2
 
 
-  C:083AH         SYMBOL        L?0014
+  C:0035H         SYMBOL        L?0014
   -------         PROC          _DELAY1MS
   D:0006H         SYMBOL        xms
   -------         DO            
   D:0005H         SYMBOL        i
   D:0004H         SYMBOL        j
   -------         ENDDO         
-  C:083EH         LINE#         2
-  C:083EH         LINE#         3
-  C:083EH         LINE#         5
-  C:0842H         LINE#         6
-  C:0842H         LINE#         7
-  C:0844H         LINE#         8
-  C:0846H         LINE#         10
-  C:0846H         LINE#         11
-  C:0848H         LINE#         12
-  C:084AH         LINE#         13
-  C:084FH         LINE#         14
-  C:0851H         LINE#         15
+  C:0039H         LINE#         2
+  C:0039H         LINE#         3
+  C:0039H         LINE#         5
+  C:003DH         LINE#         6
+  C:003DH         LINE#         7
+  C:003FH         LINE#         8
+  C:0041H         LINE#         10
+  C:0041H         LINE#         11
+  C:0043H         LINE#         12
+  C:0045H         LINE#         13
+  C:004AH         LINE#         14
+  C:004CH         LINE#         15
   -------         ENDPROC       _DELAY1MS
   -------         PROC          MAIN
-  C:0800H         LINE#         17
-  C:0800H         LINE#         18
-  C:0800H         LINE#         19
-  C:0800H         LINE#         20
-  C:0800H         LINE#         21
-  C:0803H         LINE#         22
-  C:080AH         LINE#         23
-  C:080DH         LINE#         24
-  C:0814H         LINE#         25
-  C:0817H         LINE#         26
-  C:081AH         LINE#         27
-  C:081DH         LINE#         28
-  C:0820H         LINE#         29
-  C:0823H         LINE#         30
-  C:0826H         LINE#         31
-  C:0829H         LINE#         32
-  C:082CH         LINE#         33
-  C:082FH         LINE#         34
-  C:0832H         LINE#         35
-  C:0835H         LINE#         36
-  C:0838H         LINE#         37
+  C:0003H         LINE#         17
+  C:0003H         LINE#         18
+  C:0003H         LINE#         19
+  C:0003H         LINE#         20
+  C:0003H         LINE#         21
+  C:0006H         LINE#         22
+  C:0009H         LINE#         23
+  C:000CH         LINE#         24
+  C:000FH         LINE#         25
+  C:0012H         LINE#         26
+  C:0015H         LINE#         27
+  C:0018H         LINE#         28
+  C:001BH         LINE#         29
+  C:001EH         LINE#         30
+  C:0021H         LINE#         31
+  C:0024H         LINE#         32
+  C:0027H         LINE#         33
+  C:002AH         LINE#         34
+  C:002DH         LINE#         35
+  C:0030H         LINE#         36
+  C:0033H         LINE#         37
   -------         ENDPROC       MAIN
   -------         ENDMOD        ______PLUS
 
-******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0052H BYTE ( 4%) *
-******************************************************************************
-
-Program Size: data=9.0 xdata=0 code=97
+Program Size: data=9.0 xdata=0 code=89
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

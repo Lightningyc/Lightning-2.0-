@@ -1,50 +1,16 @@
-#include <REGX52.H>
-//¸Ã¿ª·¢°åµÄÊıÂë¹ÜÊÇ¹²Òõ¼«µÄ£¬
-//ËùÒÔÊÇ1ÁÁ0Ãğ
-void Delay(unsigned int xms)		//@12.000MHz
-{
-	 unsigned char i, j;
-     while(xms--)
-   {
-	  i = 2;
-	  j = 239;
-	  do
-	  {  (--j);
-	  } while (--i);
-   }
-}
+#include <REGX52.H>//è¯¥å¼€å‘æ¿æ˜¯å…±é˜´æçš„ï¼Œæ‰€ä»¥æ˜¯1äº®0ç­
+#include "Nixie.h"
+#include "Delay.h"
 
-unsigned char NixieTable[]={0x3F,0x06,0x5B,0x4F,0X66,0x6D,0x7D,0x07,0x7F,0x6F};
-//¶¨ÒåÒ»¸ö0~9µÄÊı×éÓÃÓÚNumberµÄµ÷ÓÃ
-void Nixie(unsigned char Location,Number)
-//¶¨Òåº¯Êı
-{
-     switch(Location)
-	 {
-		 case 1 :P2_4=1;P2_3=1;P2_2=1;break;//Ö´ĞĞÒ»´ÎºóÍ£Ö¹
-		 case 2 :P2_4=1;P2_3=1;P2_2=0;break;
-	     case 3 :P2_4=1;P2_3=0;P2_2=1;break;
-	     case 4 :P2_4=1;P2_3=0;P2_2=0;break;
-	     case 5 :P2_4=0;P2_3=1;P2_2=1;break;
-	     case 6 :P2_4=0;P2_3=1;P2_2=0;break;
-	     case 7 :P2_4=0;P2_3=0;P2_2=1;break;
-	     case 8 :P2_4=0;P2_3=0;P2_2=0;break;
-	 }
-	     P0=NixieTable[Number];
-         //ÒıÓÃÊı×é	 
-	     Delay(1);
-	     P0=0x00;
-}
-
-void main()
+void main()//å‡½æ•°ä¸»ä½“
 {
 	while(1)
 	{
-	 Nixie(1,0);
-	 Delay(20);	
-     Nixie(2,1);
-	 Delay(20);
-	 Nixie(3,7);
-	 Delay(20);
+	 Nixie(2,5);
+	 Delay(200);	
+     Nixie(3,2);
+	 Delay(200);
+	 Nixie(4,0);
+	 Delay(200);
 	}
 }
