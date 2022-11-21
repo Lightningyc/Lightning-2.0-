@@ -1,3 +1,4 @@
-".\Objects\流水灯PLUS.obj" 
+".\Objects\流水灯PLUS.obj",
+".\Objects\Delay1ms.obj" 
 TO ".\Objects\流水灯 PLUS" 
 PRINT(".\Listings\流水灯 PLUS.m51") RAMSIZE(256) 

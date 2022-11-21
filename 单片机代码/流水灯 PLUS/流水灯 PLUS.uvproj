@@ -368,6 +368,16 @@
               <FileType>1</FileType>
               <FilePath>.\流水灯PLUS.c</FilePath>
             </File>
+            <File>
+              <FileName>Delay1ms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Delay1ms.c</FilePath>
+            </File>
+            <File>
+              <FileName>Delay1ms.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Delay1ms.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

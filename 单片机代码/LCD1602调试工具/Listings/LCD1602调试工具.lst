@@ -1,0 +1,42 @@
+C51 COMPILER V9.54   LCD1602________                                                       11/16/2022 15:37:03 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE LCD1602________
+OBJECT MODULE PLACED IN .\Objects\LCD1602调试工具.obj
+COMPILER INVOKED BY: D:\Keil5\C51\BIN\C51.EXE LCD1602调试工具.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\LCD1602调试工具.lst) OBJECT(.\Objects\LCD1602调试工具.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "LCD1602.h"
+   3          #include "Delay.h"
+   4          void main()
+   5          {
+   6   1          LCD_init();     
+*** WARNING C206 IN LINE 6 OF LCD1602调试工具.c: 'LCD_init': missing function-prototype
+   7   1          while(1)
+   8   1         {
+   9   2          LCD_ShowString(1,1,"Lightning");
+  10   2          Delay(500);
+  11   2              LCD_ShowChar(2,1,'0');
+  12   2              LCD_ShowChar(2,2,'1');
+  13   2              LCD_ShowChar(2,3,'7');
+  14   2              Delay(500);
+  15   2         }
+  16   1              
+  17   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     59    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

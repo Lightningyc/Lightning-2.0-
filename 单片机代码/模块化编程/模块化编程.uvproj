@@ -44,7 +44,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\流水灯 PLUS\Objects\</OutputDirectory>
+          <OutputDirectory>.\Objects\</OutputDirectory>
           <OutputName>模块化编程</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -369,14 +369,14 @@
               <FilePath>.\模块化编程.c</FilePath>
             </File>
             <File>
-              <FileName>Delay.c</FileName>
+              <FileName>Delayxms.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Delay.c</FilePath>
+              <FilePath>.\Delayxms.c</FilePath>
             </File>
             <File>
-              <FileName>Delay.h</FileName>
+              <FileName>Delayxms.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Delay.h</FilePath>
+              <FilePath>.\Delayxms.h</FilePath>
             </File>
           </Files>
         </Group>

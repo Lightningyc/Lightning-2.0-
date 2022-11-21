@@ -1,4 +1,0 @@
-"..\流水灯 PLUS\Objects\模块化编程.obj",
-"..\流水灯 PLUS\Objects\Delay.obj" 
-TO "..\流水灯 PLUS\Objects\模块化编程" 
-PRINT(".\Listings\模块化编程.m51") RAMSIZE(256) 

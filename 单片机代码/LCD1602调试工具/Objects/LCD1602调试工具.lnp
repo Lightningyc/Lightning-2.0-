@@ -1,0 +1,5 @@
+".\Objects\LCD1602调试工具.obj",
+".\Objects\LCD1602.obj",
+".\Objects\Delay.obj" 
+TO ".\Objects\LCD1602调试工具" 
+PRINT(".\Listings\LCD1602调试工具.m51") RAMSIZE(256) 
