@@ -29,7 +29,7 @@ void Timer0_Routine() interrupt 1
 	TL0 = 0x18;		
 	TH0 = 0xFC;		
 	T0Count++;		
-	if(T0Count>=500)
+	if(T0Count>=1000)
 	{
 		T0Count=0;
 		if(LEDMode==0)			
